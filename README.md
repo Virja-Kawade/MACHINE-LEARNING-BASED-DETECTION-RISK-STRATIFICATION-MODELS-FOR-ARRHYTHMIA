@@ -6,8 +6,8 @@ within big datasets. With a focus on their methodology, performance, and clinica
 Arrhythmia is one such cardiovascular disease that can go undetected if not monitored continuously. In this study, a novel method for the detection of irregular
 heartbeats, is proposed that willl help in the diagnosis of Arrhythmia. A deep learning based approach is carried out by making use of a 1D Convolutional Neural Network, that is trained on the MIT BIH Arrhythmia Database. In the final prediction task, heartbeat signal is classified into one of the two classes: Normal and Arrhythmia. The accuracy obtained for the 1D CNN is 0.985.
 
-This project has been inspired by the work of Prof. Edward Mina in his study "The Application of Deep Convolutional Networks for the Classification of ECG Signal"
-https://github.com/eddymina/ECG_Classification_Pytorch/tree/master
+This project has been inspired by the work of Prof. Edward Mina in his study
+["The Application of Deep Convolutional Networks for the Classification of ECG Signal"](https://github.com/eddymina/ECG_Classification_Pytorch/tree/master)
 
 # METHODOLOGY
 
@@ -41,31 +41,36 @@ The picture represents the annotation file as represented in MIT-BIH Arrhythmia 
 
 ![image](https://github.com/Virja-Kawade/MACHINE-LEARNING-BASED-DETECTION-RISK-STRATIFICATION-MODELS-FOR-ARRHYTHMIA/assets/71089824/8eb9b95d-f045-4521-b57c-6b0ceb6ee97e)
 
+Fig. 1. Annotation.txt file corresponding to respective ECG.csv file showing the occurrence of Arrhythmia
+
 # Dataset
 
 The MIT-BIH Arrhythmia Database will provide the data for the experiment. 48 patients at Beth-Israel Hospital have 30 minute (360 samples/sec) ECG recordings available in the database below, which contains information going all the way back to 1975. From a pool of 4000 24-hour ambulatory ECG recordings made by a mixed group of inpatients (approximately 60%) and outpatients (about 40%), 23 recordings are chosen
 30 at random. To incorporate less frequent but clinically important arrhythmias that would not be well represented in a small random sample, the remaining 25 recordings from the same set were chosen
 
-Link to the MIT-BIH Dataset - https://physionet.org/physiobank/database/html/mitdbdir/mitdbdir.htm
+[Link to the MIT-BIH Dataset](https://physionet.org/physiobank/database/html/mitdbdir/mitdbdir.htm)
 
-Link to PhysioBank ATM - https://archive.physionet.org/cgi-bin/atm/ATM
+[Link to PhysioBank ATM](https://archive.physionet.org/cgi-bin/atm/ATM)
 
 ![image](https://github.com/Virja-Kawade/MACHINE-LEARNING-BASED-DETECTION-RISK-STRATIFICATION-MODELS-FOR-ARRHYTHMIA/assets/71089824/9859bce9-ac7d-4fc8-9e29-2759e1798971)
-Fig. Six types of signal annotations classified into two classes for ease of understanding in the MIT BIH Arrhythmia Database
+
+Fig. 2. Six types of signal annotations classified into two classes for ease of understanding in the MIT BIH Arrhythmia Database
 
 ![image](https://github.com/Virja-Kawade/MACHINE-LEARNING-BASED-DETECTION-RISK-STRATIFICATION-MODELS-FOR-ARRHYTHMIA/assets/71089824/b17e5847-408c-475d-9238-4174190db78a)
-Fig. Sample 10-second ECG data of patient collected from MIT BIH Arrhythmia Database showing normal beats annotated as “.” and a single arrhythmia beat annotated as “A” (Source – PhysioNet ATM “MIT BIH Arrhythmia
-Database”)
+
+Fig. 3. Sample 10-second ECG data of patient collected from MIT BIH Arrhythmia Database showing normal beats annotated as “.” and a single arrhythmia beat annotated as “A” (Source – PhysioNet ATM “MIT BIH Arrhythmia Database”)
 
 # Results
 
 The accuracy obtained on the test dataset is 0.985. The precision, recall, F1 score and support values that were recorded are shown in table.
 
 ![image](https://github.com/Virja-Kawade/MACHINE-LEARNING-BASED-DETECTION-RISK-STRATIFICATION-MODELS-FOR-ARRHYTHMIA/assets/71089824/a9dd4a88-db18-4ecc-9dd8-a0293cadc7de)
-Fig. Normalized confusion matrix for on the test set of MIT BIH Arrhythmia Database
+
+Fig. 4. Normalized confusion matrix for on the test set of MIT BIH Arrhythmia Database
 
 ![image](https://github.com/Virja-Kawade/MACHINE-LEARNING-BASED-DETECTION-RISK-STRATIFICATION-MODELS-FOR-ARRHYTHMIA/assets/71089824/0d9614bc-aba6-47b7-8fe0-86944bf30743)
-Fig. Precision, recall, F1-score and support values of 1-D CNN on MIT BIH Arrhythmia database
+
+Fig. 5. Precision, recall, F1-score and support values of 1-D CNN on MIT BIH Arrhythmia database
 
 
 
